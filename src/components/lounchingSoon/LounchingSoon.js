@@ -1,5 +1,5 @@
 import React from 'react'
-import './LounchingSoon.css'
+import './lounchingSoon.css'
 function LounchingSoon() {
   return (
     <div className='lounchingSoon_main_div'>
