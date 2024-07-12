@@ -27,8 +27,8 @@ function Products() {
         <div className='products_nav_main'>
         <a className='products_nav_link' >Cables</a>
         <a className='products_nav_link' >Switches</a>
-        <a className='products_nav_link' >MCB's</a>
-        <a className='products_nav_link' >RCCB's</a>
+        <a className='products_nav_link' >MCB&apos;s</a>
+        <a className='products_nav_link' >RCCB&apos;s</a>
         </div>
       </div>
       <div className='products_bottom_main'>

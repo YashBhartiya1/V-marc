@@ -10,11 +10,11 @@ const BOD = ({ investors }) => {
             key={index}
           >
             <div className="h-[100%] text-white flex flex-col md:flex-row">
-              <img
+              {/* <img
                 className="h-[50%] md:h-full object-fill  rounded"
                 // src="/img/investor_img.png"
                 src={data.img}
-              />
+              /> */}
               <div className="p-2" style={{ fontFamily: "poppins" }}>
                 <p className="text-base md:text-lg lg:text-lg xl:text-2xl ">
                   {data.name}

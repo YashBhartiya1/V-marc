@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Investors from "./Investors";
+import Image from "next/image";
 // import Slider from "react-slick";
 import { useRef } from "react";
 
@@ -53,18 +54,23 @@ const Investor = ({ commitee, investors }) => {
       <div
         id="earth_img"
         className="absolute w-[176vw] h-[61vh] md:h-[80vh] lg:h-[160vh] top-[-30%] lg:top-[-100%] right-[-51%] lg:right-[-60%] "
-        style={{ transform: "rotate(-55deg)" }}>
-        <img
+        style={{ transform: "rotate(-55deg)" }}
+      >
+        <Image
           className="w-full h-full opacity-60"
           src="/img/earth.png"
-          alt="error"/>
+          alt="error"
+          width={100}
+          height={100}
+        />
       </div>
 
       <div className="absolute top-[20%] w-[80%] h-[50%] md:h-[78%] flex flex-col">
         <div className="flex justify-between items-center h-[70%]">
           <h2
             className="text-xs md:text-base lg:text-xl xl:text-2xl text-white font-[500]"
-            style={{ fontFamily: "poppins" }}>
+            style={{ fontFamily: "poppins" }}
+          >
             Disclosure As Per Regulation 46 of the <br />
             <span className="font-[800] text-xl md:text-3xl lg:text-4xl xl:text-[44px] leading-8 lg:leading-10 xl:leading-[50px]">
               SEBI (LODR), 2015
@@ -72,17 +78,21 @@ const Investor = ({ commitee, investors }) => {
           </h2>
 
           <div>
-            <img
+            <Image
               className="w-[4rem] md:w-[7rem] lg:w-[9rem] xl:w-[11rem]"
               src="/img/invest1.png"
-              alt="error"/>
+              alt="error"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
         {/* next div start */}
         <div
           id="buttons"
           className="text-white w-full absolute bottom-0 flex justify-between gap-2 text-xs md:text-sm lg:text-base xl:text-lg"
-          style={{ fontFamily: "poppins" }}>
+          style={{ fontFamily: "poppins" }}
+        >
           <button className="bg-[#4456B0] p-2 rounded lg:w-[20%]">
             Leadership Team
           </button>
@@ -146,63 +156,85 @@ const Investor = ({ commitee, investors }) => {
             </div>
           </div>
           {/* designation in commit container */}
-          <div className="w-full h-[80%] mt-12 md:mt-20" style={{fontFamily:"poppins"}}>
+          <div
+            className="w-full h-[80%] mt-12 md:mt-20"
+            style={{ fontFamily: "poppins" }}
+          >
             <div className="flex justify-end">
-            <p className="bg-[#4456B0] text-[#ffffff] rounded-tl-[6px] rounded-tr-[6px] px-4 py-2">Designation in Committee</p>
+              <p className="bg-[#4456B0] text-[#ffffff] rounded-tl-[6px] rounded-tr-[6px] px-4 py-2">
+                Designation in Committee
+              </p>
             </div>
-           
+
             <div className="border-2 border-[#363636] w-full rounded-t rounded-b p-1">
               <div className="md:flex justify-between p-2">
                 <div className="md:p-2">
-                  <h2 className="text-[#FFFFFF] text-lg">Mr Ranjeet Kumar Tiberwal</h2>
+                  <h2 className="text-[#FFFFFF] text-lg">
+                    Mr Ranjeet Kumar Tiberwal
+                  </h2>
                   <p className="text-[#A9A27B] text-md">Independent Director</p>
                 </div>
-                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">Chairman</p>
+                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">
+                  Chairman
+                </p>
               </div>
-             
             </div>
             <div className="border-2 border-[#363636] w-full border-t-0 p-1 ">
               <div className="md:flex justify-between p-2">
                 <div className="md:p-2">
-                  <h2 className="text-[#FFFFFF] text-lg">Mr Ranjeet Kumar Tiberwal</h2>
+                  <h2 className="text-[#FFFFFF] text-lg">
+                    Mr Ranjeet Kumar Tiberwal
+                  </h2>
                   <p className="text-[#A9A27B] text-md">Independent Director</p>
                 </div>
-                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">Member</p>
+                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">
+                  Member
+                </p>
               </div>
-             
             </div>
             <div className="border-2 border-[#363636] w-full border-t-0 p-1 ">
               <div className="md:flex justify-between p-2">
                 <div className="md:p-2">
-                  <h2 className="text-[#FFFFFF] text-lg">Mr Ranjeet Kumar Tiberwal</h2>
+                  <h2 className="text-[#FFFFFF] text-lg">
+                    Mr Ranjeet Kumar Tiberwal
+                  </h2>
                   <p className="text-[#A9A27B] text-md">Independent Director</p>
                 </div>
-                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">Member</p>
-              </div>           
+                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">
+                  Member
+                </p>
+              </div>
             </div>
             <div className="border-2 border-[#363636] w-full border-t-0 p-1 ">
               <div className="md:flex justify-between p-2">
                 <div className="md:p-2">
-                  <h2 className="text-[#FFFFFF] text-lg">Mr Ranjeet Kumar Tiberwal</h2>
+                  <h2 className="text-[#FFFFFF] text-lg">
+                    Mr Ranjeet Kumar Tiberwal
+                  </h2>
                   <p className="text-[#A9A27B] text-md">Independent Director</p>
                 </div>
-                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">Member</p>
-              </div>           
+                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">
+                  Member
+                </p>
+              </div>
             </div>
             <div className="border-2 border-[#363636] w-full border-t-0 p-1 ">
               <div className="md:flex justify-between p-2">
                 <div className="md:p-2">
-                  <h2 className="text-[#FFFFFF] text-lg">Mr Ranjeet Kumar Tiberwal</h2>
+                  <h2 className="text-[#FFFFFF] text-lg">
+                    Mr Ranjeet Kumar Tiberwal
+                  </h2>
                   <p className="text-[#A9A27B] text-md">Independent Director</p>
                 </div>
-                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">Member</p>
+                <p className="text-[#FFFFFF] md:py-4 md:px-12 text-lg mt-1 md:mt-0">
+                  Member
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* third section end */}
-
     </div>
   );
 };

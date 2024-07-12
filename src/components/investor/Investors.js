@@ -1,4 +1,6 @@
 import React from "react";
+// import Image from "next/image";
+
 
 const Investors = ({investors }) => {
  
@@ -7,11 +9,11 @@ const Investors = ({investors }) => {
       {investors?.map((data, index) => {
         return (  <div className="border-2 border-[#B6B6B657] w-full h-[40%] md:h-[30%] rounded-md p-1 mt-2" key={index}>
               <div className="h-[100%] text-white flex flex-col md:flex-row">
-                <img
+                {/* <Image
                   className="h-[50%] md:h-full object-fill  rounded"
                   // src="/img/investor_img.png"
                    src={data.img}
-                />
+                /> */}
                 <div className="p-2" style={{ fontFamily: "poppins" }}>
                   <p className="text-base md:text-lg lg:text-lg xl:text-2xl ">
                     {data.name}

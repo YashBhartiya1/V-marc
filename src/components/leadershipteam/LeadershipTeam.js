@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 // import Investors from "./Investors";
 // import Slider from "react-slick";
 import { useRef } from "react";
@@ -56,10 +57,11 @@ const LeadershipTeam = ({ commitee, investors }) => {
         className="absolute w-[176vw] h-[61vh] md:h-[80vh] lg:h-[160vh] top-[-30%] lg:top-[-100%] right-[-51%] lg:right-[-60%] "
         style={{ transform: "rotate(-55deg)" }}
       >
-        <img
+        <Image
           className="w-full h-full opacity-60"
           src="/img/earth.png"
           alt="error"
+          width={500} height={300}
         />
       </div>
 
@@ -76,10 +78,11 @@ const LeadershipTeam = ({ commitee, investors }) => {
           </h2>
 
           <div>
-            <img
+            <Image
               className="w-[4rem] md:w-[7rem] lg:w-[9rem] xl:w-[11rem]"
               src="/img/invest1.png"
               alt="error"
+              width={100} height={100}
             />
           </div>
         </div>

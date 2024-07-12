@@ -1,5 +1,6 @@
 import React from "react";
 import "./productsPage.css";
+import Image from "next/image";
 // import styles from "./ProductsPage.module.css"
 function ProductsPage({ productData }) {
   return (
@@ -22,10 +23,11 @@ function ProductsPage({ productData }) {
               <div className="ProductsPage_hero_bottam_tex">
                 <div className="ProductsPage_hero_bottam_link1">
                   <p>Standards </p>
-                  <img
+                  <Image
                     src="/img/video.svg"
-                    height={"16px"}
-                    width={"16px"}
+                    height={16}
+                    width={16}
+                    alt="error"
                   />{" "}
                 </div>
                 <p className="ProductsPage_hero_bottam_link2">
@@ -36,10 +38,11 @@ function ProductsPage({ productData }) {
               <div className="ProductsPage_hero_bottam_tex">
                 <div className="ProductsPage_hero_bottam_link1">
                   <p>Conductor </p>
-                  <img
+                  <Image
                     src="/img/video.svg"
-                    height={"16px"}
-                    width={"16px"}
+                    height={16}
+                    width={16}
+                    alt="error"
                   />{" "}
                 </div>
                 <p className="ProductsPage_hero_bottam_link2">
@@ -50,10 +53,11 @@ function ProductsPage({ productData }) {
               <div className="ProductsPage_hero_bottam_tex">
                 <div className="ProductsPage_hero_bottam_link1">
                   <p>Insulation </p>
-                  <img
+                  <Image
                     src="/img/video.svg"
-                    height={"16px"}
-                    width={"16px"}
+                    height={16}
+                    width={16}
+                    alt="error"
                   />{" "}
                 </div>
                 <p className="ProductsPage_hero_bottam_link2">
@@ -63,27 +67,46 @@ function ProductsPage({ productData }) {
             </div>
             <div className={"ProductsPage_button_main"}>
               <button className={"ProductsPage_button2"}>
-                <img src="/img/video.svg" />
+                <Image
+                  src="/img/video.svg"
+                  height={16}
+                  width={16}
+                  alt="error"
+                />
                 <p>Contact </p>{" "}
               </button>
               <button className={"ProductsPage_button1"}>
-                <img src="/img/video.svg" />
+                <Image
+                  src="/img/video.svg"
+                  height={16}
+                  width={16}
+                  alt="error"
+                />
                 <p>Download Brochure</p>{" "}
               </button>
             </div>
           </div>
           <div className="ProductsPage_right_img_box">
             <div className="ProductsPage_right_img_main">
-              <img
+              <Image
                 className={"ProductsPage_right_img"}
                 src="/img/prodact_right.png"
+                height={100}
+                width={100}
+                alt="error"
               />
             </div>
             <div className="ProductsPage_right_text_box">Color Variants</div>
           </div>
         </div>
         <div className={"ProductsPage_earth_image_main"}>
-          <img className={"ProductsPage_earth_image"} src="/img/earth.png" />
+          <Image
+            className={"ProductsPage_earth_image"}
+            src="/img/earth.png"
+            height={16}
+            width={16}
+            alt="error"
+          />
         </div>
       </div>
       <div
@@ -99,10 +122,11 @@ function ProductsPage({ productData }) {
           margin: "60px 0px",
         }}
       >
-        {productData?.description.map((item, key) => {
+        {productData?.description.map((item, index) => {
           return (
             <>
               <div
+                key={index}
                 style={{
                   width: "90%",
                   display: "flex",
@@ -119,9 +143,10 @@ function ProductsPage({ productData }) {
                   {item.title}
                 </h3>
                 <div>
-                  {item.content.map((cItem, key) => {
+                  {item.content.map((cItem, cindex) => {
                     return (
                       <p
+                        key={cindex}
                         style={{
                           textAlign: "justify",
                         }}
@@ -130,9 +155,10 @@ function ProductsPage({ productData }) {
                       </p>
                     );
                   })}
-                  {item?.bullets?.map((bItem, key) => {
+                  {item?.bullets?.map((bItem, bindex) => {
                     return (
                       <p
+                        key={bindex}
                         style={{
                           padding: "14px",
                         }}

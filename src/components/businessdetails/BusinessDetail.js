@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const BusinessDetail = () => {
   return (
@@ -8,10 +9,11 @@ const BusinessDetail = () => {
         className="absolute w-[176vw] h-[61vh] md:h-[80vh] lg:h-[160vh] top-[-30%] lg:top-[-100%] right-[-51%] lg:right-[-60%] "
         style={{ transform: "rotate(-55deg)" }}
       >
-        <img
+        <Image
           className="w-full h-full opacity-60"
           src="/img/earth.png"
           alt="error"
+          width={500} height={300}
         />
       </div>
 
@@ -28,10 +30,11 @@ const BusinessDetail = () => {
           </h2>
 
           <div>
-            <img
+            <Image
               className="w-[4rem] md:w-[7rem] lg:w-[9rem] xl:w-[11rem]"
               src="/img/invest1.png"
               alt="error"
+              width={100} height={100}
             />
           </div>
         </div>
@@ -69,24 +72,26 @@ const BusinessDetail = () => {
           “V-Marc”is among the global leaders in providing reliable and
           consistent quality of products.By supplying our optimally priced high
           quality products we enable our clients to achieve more and outperform
-          their competitors and stay ahead of the innovation curve. Customers'
+          their competitors and stay ahead of the innovation curve. Customers
           satisfaction is our prime objectives it is the foundation stone for
-          the growth of the company. <br /> “V-Marc”has earned trust and
-          reputation in India by winning the customers’ confidence. A very huge
+          the growth of the company. <br /> V-Marc has earned trust and
+          reputation in India by winning the customers confidence. A very huge
           quantity of our cables has been in operation across India. The
           Organization is also committed to comply with all applicable
           environment, health & safety legislations and all other requirements
           of existing & prospective buyers.
         </p>
         <p className="text-[#EF3F3C] mt-2">Read More</p>
-        <img src="/img/bdarrow.png" />
+        <Image src="/img/bdarrow.png" width={30} height={50} alt="error"/>
       </div>
 
       <div className="absolute w-full h-full bg-[#2B2B2B] top-[150%] md:top-[160%] lg:top-[170%]">
         <div className="w-[80%] h-[30%] relative mt-10 bg-black rounded-lg overflow-hidden mx-auto">
-          <img
+          <Image
             src="/img/blackearth.png"
             className="w-full h-full object-cover grayscale"
+            width={500} height={300}
+            alt="error"
           />
           <div className="absolute top-0 w-full text-[#ffff] font-[500] h-full flex flex-col md:flex-row md:justify-around md:items-center px-4 py-2 ">
             <div className="md:basis-1/2 h-full flex flex-col justify-between md:justify-evenly md:px-2">
@@ -120,7 +125,7 @@ const BusinessDetail = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center gap-2 bg-[#363636] p-1 rounded w-[50%] md:w-[30%]">
-                <img src="/img/mdi_eye.png" alt="error" />
+                <Image src="/img/mdi_eye.png" alt="error" width={30} height={100}/>
                 <p className="text-[#8EA1FF]">view PDF</p>
               </div>
             </div>
@@ -131,7 +136,7 @@ const BusinessDetail = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center gap-2 bg-[#363636] p-1 rounded w-[50%] md:w-[30%]">
-                <img src="/img/mdi_eye.png" alt="error" />
+                <Image src="/img/mdi_eye.png" alt="error" width={30} height={100}/>
                 <p className="text-[#8EA1FF]">view PDF</p>
               </div>
             </div>
@@ -144,7 +149,7 @@ const BusinessDetail = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center gap-2 bg-[#363636] p-1 rounded w-[50%] md:w-[30%]">
-                <img src="/img/mdi_eye.png" alt="error" />
+                <Image src="/img/mdi_eye.png" alt="error" width={30} height={100}/>
                 <p className="text-[#8EA1FF]">view PDF</p>
               </div>
             </div>
@@ -155,7 +160,7 @@ const BusinessDetail = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center gap-2 bg-[#363636] p-1 rounded w-[50%] md:w-[30%]">
-                <img src="/img/mdi_eye.png" alt="error" />
+                <Image src="/img/mdi_eye.png" alt="error"width={30} height={100} />
                 <p className="text-[#8EA1FF]">view PDF</p>
               </div>
             </div>
